@@ -11,7 +11,8 @@ As of now, it inspects functions, classes under a module and methods, nested cla
 Usage:
 =====
 
-``` 
+```python 
+
 >>> import mod_struct
 
 >>> import os # import the module which you want to inspect
