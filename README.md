@@ -2,7 +2,7 @@ mod_struct
 ==========
 
 
-Rationale behind creation: <a href="http://nbviewer.ipython.org/gist/saurabh-hirani/9037811" target="_blank">http://nbviewer.ipython.org/gist/saurabh-hirani/9037811</a>
+Rationale behind creation: <a href="http://nbviewer.ipython.org/gist/saurabh-hirani/9037811" target="_blank">Lessons learnt while automating docstrings checking</a>
 
 Long story short: Get fully qualified names and other info about members of a module/class. 
 
