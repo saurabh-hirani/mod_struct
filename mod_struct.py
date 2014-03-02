@@ -35,8 +35,13 @@ class Modstruct(object):
         return self.id_name_map.get(id(entity), None)
 
     def get_base_entity_name(self):
+        """ Return the name of the base entity passed in by the user """
+        # if base entity is not a method - just look up its id
         if self.base_entity_type != 'method':
             return self.get_entity_name(self.base_entity)
+
+        # else as method id does not stay constant, cycle through all members 
+        # and return the member matching the base entity ref
         for member in self.all_members:
             if self.base_entity == member['ref']:
                 return self.get_entity_name(member['ref'])
@@ -149,7 +154,7 @@ def get_members(entity, categorize=False):
     m = Modstruct(entity, categorize=categorize)
     return m.get_all_members()
 
-def run_main():
+def main():
     import test_mod
     from pprint import pprint as pp
 
@@ -185,4 +190,4 @@ def run_main():
     pp(get_members(test_mod.SpecFile.Section1, categorize=True)['method'])
 
 if __name__ == '__main__':
-    run_main()
+    main()
