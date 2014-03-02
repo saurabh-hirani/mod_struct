@@ -2,7 +2,7 @@ mod_struct
 ==========
 
 
-Rationale behind creation: http://curiosityhealsthecat.blogspot.in/2014/02/lessons-learnt-while-automating.html
+Rationale behind creation: http://nbviewer.ipython.org/gist/saurabh-hirani/9037811
 
 Long story short: Get fully qualified names and other info about members of a module/class. 
 
