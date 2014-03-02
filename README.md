@@ -2,7 +2,7 @@ mod_struct
 ==========
 
 
-Rationale behind creation: <a href=" http://curiosityhealsthecat.blogspot.in/2014/02/lessons-learnt-while-automating.html" target="_blank"> Lessons learnt while automating docstring checking </a>
+Rationale behind creation: http://curiosityhealsthecat.blogspot.in/2014/02/lessons-learnt-while-automating.html
 
 Long story short: Get fully qualified names and other info about members of a module/class. 
 
